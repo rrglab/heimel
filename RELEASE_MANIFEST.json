@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "release_version": "0.2.0",
+  "status": "RELEASE_CANDIDATE",
+  "files": [
+    {
+      "path": "conformance/CONTRACT.txt",
+      "sha256": "f31846cb4be597726ce07bf12bd48d89f39b906af36f08ff2857e8f9737fc02e"
+    },
+    {
+      "path": "conformance/test_run_conformance.py",
+      "sha256": "6bd9eef7e7f565f8b5f75778d349fbe75c4d3a38606c94d88f4017b93577be4c"
+    },
+    {
+      "path": "conformance/v0.1.0/test-vectors.json",
+      "sha256": "094d1dae71a1a52f143aa06b9842cb59ab38747f72b50484f0bc8878fe20fd72"
+    },
+    {
+      "path": "conformance/v0.2.0/suite.json",
+      "sha256": "ca9508ee1da094ff149caaa93b90c7b898e305bd60a8e6f16b48a71825c42962"
+    },
+    {
+      "path": "conformance/v0.2.0/vectors/baseline.json",
+      "sha256": "81fa4e7a89c923e7040bc1a825a43a4975f9998f9401180727d8bf22b0b13f56"
+    },
+    {
+      "path": "conformance/v0.2.0/vectors/freshness.json",
+      "sha256": "479886a5ed22aae0cab0002685aee1d9a1e25bea0f97e42fac3dde75363e8c6a"
+    },
+    {
+      "path": "conformance/v0.2.0/vectors/effect_binding.json",
+      "sha256": "26048b6e90ef32f10b5c7b522de4b8ce352b52941e74a94d0fd4175e2b27be6f"
+    },
+    {
+      "path": "conformance/v0.2.0/vectors/lifecycle.json",
+      "sha256": "e36181105a9af443f071d83fc7f83cf3afa464ebee81f9cf95cf5c697942a0cb"
+    },
+    {
+      "path": "conformance/v0.2.0/vectors/evidence_unknown.json",
+      "sha256": "b7a1ed77cdaf46a043195691067f443e81711260e67eb719de98085b86c96a8c"
+    },
+    {
+      "path": "conformance/v0.2.0/vectors/delegation_actor.json",
+      "sha256": "8c00d1b78d99442ad3a77b9a557672672c28b2f08a8236b364ae95a4c6ea2f31"
+    },
+    {
+      "path": "conformance/v0.2.0/vectors/runtime_adversarial.json",
+      "sha256": "a89bbd28232ddd86c066e04a4a0b7c5e27917cdccdb4d3655cab1dba8ddea997"
+    },
+    {
+      "path": "conformance/receipts/reference-v0.2.0.json",
+      "sha256": "c13f53578664e3c9c430eb7d0050e843de4bf13ee28b83d7f3b1db9a6f5910b4"
+    },
+    {
+      "path": "reference/adapter.py",
+      "sha256": "57da72f0b5afd873341eb8964e5805195e0f125ad5695df0c9e05f1fb52b8323"
+    },
+    {
+      "path": "reference/test_adapter.py",
+      "sha256": "c027473ef3101f4504d35c0de7c51cc76ea1773ee14c1295f798348f845abd50"
+    },
+    {
+      "path": "spec/CONSEQUENCE_LOOP.txt",
+      "sha256": "7528cc8a35977f33a53f4c5a60b862aa1d0e173a4dc45cbf313135a296bac8e6"
+    },
+    {
+      "path": "spec/formal/AuthorityConfinement.cfg",
+      "sha256": "ca6871f35d620cdcbf2643f226a02cd3fe070c825d8e7cb581c062ba8bf8d55d"
+    },
+    {
+      "path": "spec/formal/AuthorityConfinement.tla",
+      "sha256": "0631f97fbd33d2310d6206e79577bacd9520bac57448c83151b7c0240000f479"
+    },
+    {
+      "path": "spec/formal/ConsequenceBoundary.cfg",
+      "sha256": "775785a5cee14bf9fce7d86141c1dc2900af0f7a1028ec773ccea337ad64891c"
+    },
+    {
+      "path": "spec/formal/ConsequenceBoundary.tla",
+      "sha256": "88e418edf73ebe0a4cb75957c0f57b2a322b6430c8f8dc11dbd9e5029cdad8cd"
+    }
+  ],
+  "root_digest": "0b975035416adf42b60dac160ef4eb944ae4e743a4a3aea1637359cf3d715b8c",
+  "gates": {
+    "public_boundary": "REQUIRED",
+    "manifest_integrity": "REQUIRED",
+    "source_attestation": "REQUIRED_FOR_RELEASE",
+    "conformance": "REQUIRED_FOR_RELEASE",
+    "formal_verification": "REQUIRED_FOR_RELEASE",
+    "secret_scan": "REQUIRED"
+  }
+}
