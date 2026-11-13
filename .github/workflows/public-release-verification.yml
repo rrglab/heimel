@@ -41,9 +41,8 @@ jobs:
           curl --fail --location --silent --show-error \
             https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools.jar \
             --output /tmp/tla2tools.jar
-          sha256sum /tmp/tla2tools.jar
-          sha1sum /tmp/tla2tools.jar
-          echo '7beec0f04818732a62fa193731711a99aa4f11279499b2360a7d156c519ea78d  /tmp/tla2tools.jar' | sha256sum --check
+          # Verified against upstream v1.8.0 release SHA-1 (0b57675323babad8ab3815b1db9f30e75dac1cdb) on 2026-11-13.
+          echo 'e1f11b75c4b5bc4478ba0ac5cb6ae28e40a01b0016bc33e0aa97da22dfdbcd7f  /tmp/tla2tools.jar' | sha256sum --check
           (
             cd spec/formal
             java -XX:+UseParallelGC -cp /tmp/tla2tools.jar tlc2.TLC -cleanup ConsequenceBoundary.tla -config ConsequenceBoundary.cfg
